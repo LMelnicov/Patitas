@@ -1,0 +1,66 @@
+.historia {
+    padding: 100px 0;
+    background-color: #61001D;
+}
+
+.historia h1 {
+    color: #f0e7c7;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: "Averia Libre", system-ui;
+}
+
+.historia p {
+    color: #f0e7c7;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-right: 150px;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+.imagen-nosotros {
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+    object-fit: cover;
+    border-radius: 40px;
+    border: #f0e7c7 3px solid;
+}
+
+.equipo {
+    padding: 100px 0;
+}
+
+.equipo h1 {
+    color: #61001D;
+    font-family: "Averia Libre", system-ui;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.card-veterinario {
+    border-radius: 20px;
+    border: 2px solid #61001D;
+    background-color: #61001D;
+}
+
+.card-veterinario img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-veterinario h3 {
+    color: #f0e7c7;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+.card-veterinario h5 {
+    color: #f0e7c7;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+.card-veterinario p {
+    color: #f0e7c7;
+    font-family: "Google Sans Flex", sans-serif;
+}

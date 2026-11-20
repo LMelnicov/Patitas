@@ -1,0 +1,34 @@
+<div class="container w-100">
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+            <h4>Agregar un nuevo producto</h4>
+            <form action="/admin/productos/agregar" method="post" class="mt-4" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <select name="categoria" class="form-select" required>
+                        <option disabled selected>Categoría</option>
+                        <option value="al">Alimentacion</option>
+                        <option value="con">Confort</option>
+                        <option value="acc">Accesorios </option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Titulo" name="titulo">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Descripcion" name="descripcion">
+                </div>
+                <div class="mb-3">
+                    <label>Imagen: <input type="file" name="imagen" id="imagen"></label>
+                </div>
+                <button class="btn btn-patitas mt-2" type="submit">
+                    Guardar
+                </button>
+                <a href="/admin/productos" class="btn btn-cancelar ms-2 mt-2">Cancelar</a>
+            </form>
+
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

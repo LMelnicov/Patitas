@@ -1,0 +1,52 @@
+.hero-servicios {
+    height: 100vh;
+    padding-top: 50px;
+}
+
+
+.texto-servicios h1 {
+    color: #61001D;
+    font-size: 7rem;
+    line-height: 0.9;
+    font-weight: bold;
+    font-family: "Averia Libre", system-ui;
+}
+
+
+.texto-servicios p {
+    color: #61001D;
+    font-size: 1.2rem;
+    max-width: 550px;
+    margin-top: 50px;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+
+.imagen-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imagen-servicios {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 40px;
+    border: #61001D solid 3px;
+}
+
+.servicio-oscuro {
+    background-color: #61001D;
+}
+
+.servicio-oscuro .texto-servicios h1,
+.servicio-oscuro .texto-servicios p {
+    color: #f0e7c7;
+}
+
+.servicio-oscuro .imagen-servicios {
+    border: #f0e7c7 solid 3px;
+}
