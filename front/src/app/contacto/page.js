@@ -7,7 +7,7 @@ export default function Contacto() {
             <div className="contacto">
                 <div>
                     <h2 className="titulo-contacto">Contacto rápido</h2>
-                    <ContactForm/>
+                    <ContactForm postUrl={`${process.env.API_BASE_URL}/api/contacto`}/>
                 </div>
                 <div className="datos">
                     <h2 className="titulo-contacto">Otras vías de comunicación</h2>
