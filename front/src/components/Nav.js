@@ -17,7 +17,7 @@ export default function Nav() {
                         <i className="fa-solid fa-paw"></i>
                     </div>
 
-                    <h1 className="titulo fs-3 mb-0">Patitas</h1>
+                    <h1 className="titulo fs-3 mb-0" style={{ fontFamily: "'Google Sans Flex', sans-serif" }}>Patitas</h1>
                 </div>
 
                 <button

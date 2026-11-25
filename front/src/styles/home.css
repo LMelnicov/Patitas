@@ -22,7 +22,7 @@
     left: 7%;
     color: #61001D;
     max-width: 1000px;
-    font-family: "Averia Libre", system-ui;
+    font-family: "Google Sans Flex", sans-serif;
 }
 
 .texto-inicio h1 {
@@ -41,7 +41,7 @@
 
 .contenido-titulo {
     font-size: 4rem;
-    font-family: "Averia Libre", system-ui;
+    font-family: "Google Sans Flex", sans-serif;
     margin-top: 250px;
     color: #61001D;
 }

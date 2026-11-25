@@ -1,5 +1,12 @@
 import "@/styles/productos.css";
 
+const categorias = [
+    { codigo: 'al', titulo: 'ALIMENTACIÓN' },
+    { codigo: 'acc', titulo: 'ACCESORIOS' },
+    { codigo: 'con', titulo: 'CONFORT' }
+];
+
+
 function ProductoCard({ titulo, descripcion, imagen }) {
     return (
         <div className="col">
@@ -24,18 +31,28 @@ export default async function Productos() {
     const productos = await res.json();
 
     return (
-        <div className="container" style={{ paddingTop: '150px' }}>
-            <h1>Productos</h1>
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
-                {productos.map(item => (
-                    <ProductoCard
-                        key={item.id}
-                        titulo={item.titulo}
-                        descripcion={item.descripcion}
-                        imagen={item.imagen}
-                    />
-                ))}
-            </div>
+        <div className="container" style={{ paddingTop: '150px', paddingBottom: '50px' }}>
+            {categorias.map(cat => {
+                const delGrupo = productos.filter(p => p.categoria === cat.codigo);
+
+                if (delGrupo.length === 0) return null;
+
+                return (
+                    <section key={cat.codigo} className="mb-5">
+                        <h2 className="titulo-productos mb-4">{cat.titulo}</h2>
+                        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+                            {delGrupo.map(item => (
+                                <ProductoCard
+                                    key={item.id}
+                                    titulo={item.titulo}
+                                    descripcion={item.descripcion}
+                                    imagen={item.imagen}
+                                />
+                            ))}
+                        </div>
+                    </section>
+                );
+            })}
         </div>
     );
 }

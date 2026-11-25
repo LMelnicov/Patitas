@@ -12,7 +12,7 @@ router.get('/productos', async function (req, res, next) {
         productos = productos.map(producto => ({
             ...producto,
             imagen: producto.img_id
-                ? cloudinary.url(producto.img_id, { width: 400, height: 300, crop: 'fill' })
+                ? cloudinary.url(producto.img_id, { width: 400, height: 300, crop: 'pad', background: 'white' })
                 : `${base}/images/noimagen.jpg`
         }));
 

@@ -7,7 +7,7 @@
     color: #f0e7c7;
     font-weight: bold;
     font-size: 4rem;
-    font-family: "Averia Libre", system-ui;
+   font-family: "Google Sans Flex", sans-serif;
 }
 
 .historia p {
@@ -33,7 +33,7 @@
 
 .equipo h1 {
     color: #61001D;
-    font-family: "Averia Libre", system-ui;
+    font-family: "Google Sans Flex", sans-serif;
     font-weight: bold;
     font-size: 4rem;
 }

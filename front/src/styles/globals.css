@@ -51,6 +51,7 @@
 }
 
 
+
 /*   FOOTER    */
 
 
@@ -80,7 +81,7 @@
 .footer h4 {
     color: #f7e5a6;
     margin-bottom: 0px;
-    font-family: "Averia Libre", system-ui;
+    font-family: "Google Sans Flex", sans-serif;
 }
 
 .footer p {
