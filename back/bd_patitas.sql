@@ -37,7 +37,7 @@ CREATE TABLE `productos` (
   `descripcion` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `img_id` varchar(250) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -46,7 +46,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-INSERT INTO `productos` VALUES (5,'al','Ejemplo 1','Lorem ipsum dolor sit amet, consectetur adipiscing elit\r\n',''),(6,'con','Ejemplo 2','Lorem ipsum dolor sit amet, consectetur adipiscing elit',''),(7,'al','Ejemplo 3','Lorem ipsum dolor sit amet, consectetur adipiscing elit','xpaad5fb0wrr20jymuyi'),(9,'con','Ejemplo 4','Lorem ipsum dolor sit amet, consectetur adipiscing elit','likavbkw0rgfemilbs2d'),(10,'acc','Ejemplo 5','Lorem ipsum dolor sit amet, consectetur adipiscing elit','whq1itpzask3d5akhmf0');
+INSERT INTO `productos` VALUES (11,'al','Perro Adulto Grande','Alimento para perro adulto de tamaño grande marca Purina','ndrzyx3rakvgosxmbxfo'),(12,'al','Perro Adulto Pequeño','Alimento para perro adulto de tamaño chico marca Royal Canin','pyjks3nmwf0lcepqxfic'),(13,'al','Perro Cachorro Grande','Alimento para perro cachorro de tamaño grande marca Sieger','e4wvld6ptpcybtnq6bvu'),(14,'al','Perro Cachorro Pequeño','Alimento para perro cachorro de tamaño chico marca Agility','gbwvyacv2jjpmywqh87q'),(15,'al','Perro Adulto Control de peso','Alimento para perro adulto control de peso marca Balanced','f2da6ph22n6pj4mfdwqe'),(16,'acc','Pelota Smart','Pelota Contenedora de Alimento Grande','avmctn0gy3hbli5oor5v'),(17,'acc','Soga Juguete','Hueso de Soga Fun 43cm marca CanCat con 3 nudos','ejzjucdhxq1rsrexzjbl'),(18,'acc','Hueso de goma','Hueso CanCat de goma antimicrobial sabor pollo','uaiqmj9rnwmffhcmz4ia'),(19,'acc','Bolsa sanitaria','Bolsitas sanitarias para recoger excremento. 10 bolsas por rollo','mmfew03lrqrybsf9g9lw'),(20,'acc','Pala plástica ','Pala plástica para recoger excremento','iql041ad377lod4ls6xm'),(21,'con','Comedero','Comedero marca Pets Plast','fkqua12q5jhrars4ccqa'),(22,'con','Bebedero','Bebedero de plástico marca Ferplast tamaño mediano.','wkvigqsohkyv3yab7vgq'),(23,'con','Cama ','Cama Antiestrés marca DogLove','faobxrjpctsgwlhdor3j'),(24,'con','Collar','Collar de nylon acolchado','k8qdgnxomhqugttvp0dw'),(25,'con','Ropa','Ropa para perros distintos tamaños y colores','fet7pehnmtwmhlzejbfg');
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,4 +89,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-23 12:07:44
+-- Dump completed on 2026-11-27 12:00:06
