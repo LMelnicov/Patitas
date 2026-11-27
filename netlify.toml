@@ -1,0 +1,8 @@
+# The deployable site is the Next.js app in /front.
+# The Express + MySQL API in /back is not part of this build.
+[build]
+  base = "front"
+  # Install from the lockfile first so the build works even where
+  # dependencies aren't pre-installed (e.g. CLI-driven deploys).
+  command = "npm ci && npm run build"
+  publish = ".next"
